@@ -1,0 +1,30 @@
+// Primary Colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// Neutral Colors
+$dark_blue: hsl(234, 12%, 34%);
+$gray_blue: hsl(229, 6%, 66%);
+$light_gray: hsl(0, 0%, 98%);
+
+// Font
+
+@font-face {
+   font-family: Poppins;
+   src: url(../fonts/Poppins-Regular.ttf);
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: Poppins;
+   src: url(../fonts/Poppins-ExtraLight.ttf);
+   font-weight: 200;
+}
+
+@font-face {
+   font-family: Poppins;
+   src: url(../fonts/Poppins-SemiBold.ttf);
+   font-weight: 600;
+}

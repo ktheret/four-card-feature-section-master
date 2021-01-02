@@ -1,0 +1,416 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset perso */
+a,
+del,
+ins {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+input,
+button {
+  outline: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: table;
+  width: 100%;
+}
+
+footer {
+  display: table-row;
+  height: 15px;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+
+body {
+  height: 100vh;
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  background: #fafafa;
+}
+
+header {
+  padding-top: 4rem;
+  text-align: center;
+  line-height: 40px;
+  color: #a3a5ae;
+  margin-bottom: 3rem;
+}
+
+header div {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+header p {
+  margin: 0rem 2rem;
+  line-height: 22px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #4c4e61;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  row-gap: 30px;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.supervisor {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  position: relative;
+  margin: auto;
+}
+
+.supervisor section {
+  border-top: 5px solid #45d3d3;
+}
+
+.team_builder {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  position: relative;
+  margin: auto;
+}
+
+.team_builder section {
+  border-top: 5px solid #ea5353;
+}
+
+.karma {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  position: relative;
+  margin: auto;
+}
+
+.karma section {
+  border-top: 5px solid #fcaf4a;
+}
+
+.calculator {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  position: relative;
+  margin: auto;
+}
+
+.calculator section {
+  border-top: px solid #549ef2;
+}
+
+section {
+  display: inline-block;
+  background-color: white;
+  width: 20rem;
+  height: 15rem;
+  -webkit-box-shadow: 1px 1px 10px #a3a5ae;
+          box-shadow: 1px 1px 10px #a3a5ae;
+  border-radius: 5px;
+  padding: 1.5rem;
+  color: #a3a5ae;
+  line-height: 25px;
+}
+
+section img {
+  position: relative;
+  bottom: -40px;
+  left: 210px;
+}
+
+h2 {
+  color: #4c4e61;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 376px) {
+  header p {
+    margin: 0rem 30rem;
+  }
+  .container {
+    margin: 0rem 7.5rem;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .supervisor {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    position: relative;
+    margin: auto;
+  }
+  .team_builder {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+    position: relative;
+    margin: auto;
+  }
+  .karma {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+    position: relative;
+    margin: auto;
+  }
+  .calculator {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / span 1;
+    position: relative;
+    margin: auto;
+  }
+  section {
+    width: 23rem;
+  }
+  section img {
+    left: 250px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
